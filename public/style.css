@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background: rgb(17, 47, 71);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 6px rgba(255, 254, 254, 0.453);
+  border-radius: 10px;
+  padding: 5rem 1.8rem;
+  color: #fff;
+}
+
+.fa-times{
+ display: none;
+}
+
+.fa-times.active{
+  display: block;
+  position: absolute;
+  margin: -3.5rem 0rem 0rem 9.8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fa-times.active:hover{
+  color: rgb(17, 47, 71);
+  border-radius: 50%;
+  animation: close-animation-icon .5s linear forwards;
+}
+
+@keyframes close-animation-icon {
+  to{
+    margin: -3.5rem 0rem 0rem 9.6rem;
+    padding: .1rem .3rem;
+    background: #fff;
+  }
+}
+
+label{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input {
+  padding: 0.3rem;
+}
+
+button {
+  background: #0d90e8;
+  color: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #086caf;
+}
+
+.fa-arrow-right{
+  margin-left: 0.5rem;
+}
+
+.fa-arrow-circle-right {
+    margin-left: 0.4rem;
+}
+
+.box-response.active{
+  background: rgb(17, 47, 71);
+  color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem 0rem ;
+  width: 14rem;
+  margin-bottom: 5rem;;
+  border-radius:  .5rem;
+  text-align: center;
+}
+
+[data-anime].animation {
+  animation: response-animation 1s linear;
+}
+
+@keyframes response-animation {
+  from {
+    margin-top: -60%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+.strip.active{
+  width: 99.8%;
+  background: rgb(17, 47, 71);
+  position: absolute;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 6px rgba(255, 254, 254, 0.453);
+  margin-bottom: 5rem;
+  animation: strip-animation 1s linear forwards;
+}
+
+@keyframes strip-animation {
+  from {
+    height: 0rem;
+    opacity: 0;
+  }
+  to {
+    height: 8rem;
+    opacity: 1;
+  }
+}
+
+[data-error]{
+  display: none;
+  color: rgb(255, 240, 25);
+  text-align: center;
+  font-weight: 700;
+}
+
+[data-error].active{
+  display: block;
+}
+
+footer{
+  color: #fff;
+  margin-top: 2rem;
+}
