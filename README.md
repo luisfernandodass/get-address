@@ -18,8 +18,8 @@ The following tools were used to build the project:
 
 ## Images
 
-<img src="https://user-images.githubusercontent.com/67171626/132931525-60d13801-0aa5-483d-b778-3a4c8e6da966.png" width=200/>
-<img src="https://user-images.githubusercontent.com/67171626/132931529-ab8b7289-f37b-4354-9f80-632fdc733ec7.png"/>
+<img src="https://user-images.githubusercontent.com/67171626/132931525-60d13801-0aa5-483d-b778-3a4c8e6da966.png" width="350px" height="420px"/>
+<img src="https://user-images.githubusercontent.com/67171626/132931529-ab8b7289-f37b-4354-9f80-632fdc733ec7.png" width="350px" height="420px"/>
 
 ## License
 <img src="https://img.shields.io/github/license/luisfernandodass/get-address"/>
